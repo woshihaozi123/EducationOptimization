@@ -1,0 +1,89 @@
+﻿<Window x:Class="EducOpti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="教育优化模型" Width="520.252" Height="401.95" >
+    <Grid >
+        <Grid.Background>
+            <ImageBrush  Opacity="0.8"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="#FF747070" BorderThickness="1">
+            <Grid x:Name="mainGrid" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical" Grid.Row="0">
+                    <Label Content="小区"  Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox x:Name="DistrictTextBox" Margin="10,0,10,0" Width="420" Height="25">
+                            <TextBox.Background>
+                                <SolidColorBrush Color="White" Opacity="0.7"/>
+                            </TextBox.Background>
+                        </TextBox>
+                        <Button x:Name="btn_District" Height="25" Width="25" Click="btn_District_Click" >
+                          
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Row="1">
+                    <Label Content="学校"  Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox x:Name="SchoolTextBox" Margin="10,0,10,0" Width="420" Height="25">
+                            <TextBox.Background>
+                                <SolidColorBrush Color="White" Opacity="0.7"/>
+                            </TextBox.Background>
+                        </TextBox>
+                        <Button x:Name="btn_School" Height="25" Width="25" Click="btn_School_Click" >
+                          
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Grid.Row="2">
+                    <Label Content="学校小区关系表"  Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox x:Name="RelationTextBox" Margin="10,0,10,0" Width="420" Height="25">
+                            <TextBox.Background>
+                                <SolidColorBrush Color="White" Opacity="0.7"/>
+                            </TextBox.Background>
+                        </TextBox>
+                        <Button x:Name="btn_Relation" Height="25" Width="25" Click="btn_Relation_Click" >
+                          
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+              
+                <StackPanel Orientation="Vertical" Grid.Row="3">
+                    <Label Content="输出"  Margin="10,10,0,0"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox x:Name="OutputTextBox" Margin="10,0,10,0" Width="420" Height="25">
+                            <TextBox.Background>
+                                <SolidColorBrush Color="White" Opacity="0.7"/>
+                            </TextBox.Background>
+                        </TextBox>
+                        <Button x:Name="btn_Output" Height="25" Width="25" Click="btn_Output_Click" >
+                            
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+
+
+
+
+            </Grid>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btOk" Click="btOk_Click" Width=" 70" Margin="12,8,50,16" Content="确定"  Background="{x:Null}" BorderBrush="Black" FontSize="13.333" />
+            <Button x:Name="btCancel"  Click="btCancel_Click" Width="70" Margin="10,8,20,16" Content="取消"  Background="{x:Null}" BorderBrush="Black" FontSize="13.333" />
+        </StackPanel>
+
+    </Grid>
+</Window>
